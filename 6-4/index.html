@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>镇馆之宝详情</title>
+<meta charset="utf-8" />
+<style type="text/css">
+html,body{
+  width:100%;
+	height:100%;
+	margin:0px;
+	background-color:antiquewhite;
+}
+
+.head{
+	background-color:#000000;
+    width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:right;
+}
+ .head div {
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .head div:hover {
+            color:indianred;
+        }
+.head div{
+	width:200px;
+	line-height:50px;
+	text-align:center;
+	color:#FFFFFF;
+}
+  .text1{
+    width:80%;
+    height:200px;
+    position: absolute;
+    top: 600px;
+	right:20px;
+    text-align:center;
+	margin:auto auto;
+	text-align:center;
+	background-color: indianred;
+	border-radius:20px;
+	color:antiquewhite;
+	font-size:20px;
+	letter-spacing: 2.5px;
+  }
+  .text2{
+	width:80%;
+	height:250px;
+	line-height:50px;
+	text-align:center;
+	position: absolute;
+	top:1300px;
+	left:20px;
+	margin:auto auto;
+	background-color: indianred;
+	border-radius:20px;
+	color:antiquewhite;
+	font-size:20px;
+	letter-spacing: 2.5px;
+  }
+  .main{
+    width:100%;
+    margin:0px auto;
+    height:500px;
+	border:1px solid black;
+	background-image: url("https://s2.loli.net/2023/12/20/vRao1IAzw72dhnk.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	transition: background-image 1s;
+	cursor: pointer;
+  }
+  .image1 img{
+	width:400px;
+	height:400px;
+	line-height:500px;
+	text-align:center;
+	position: absolute; 
+	  top: 850px;
+	  left: 100px;
+}
+.image2 img{
+	width:400px;
+	height:400px;
+	line-height:500px;
+	text-align:center;
+	position: absolute; 
+	  top: 850px;
+	  left: 535px;
+	 }
+  .image3 img{
+	width:400px;
+	height:400px;
+	line-height:500px;
+	text-align:center;
+	position: absolute;
+	right:100px;
+	top:850px;
+	 }
+	 
+.overlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.7);
+   justify-content: center;
+   align-items: center;
+   }
+.overlay img {
+   max-width: 80%;
+   max-height: 80%;
+         }
+.text1, .text2 {
+    transition: color 0.3s;
+    cursor: pointer;
+    }
+.text1:hover, .text2:hover {
+    color: black;
+    }
+ .button-container {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .float-button {
+            width: 50px;
+            height: 50px;
+            background-color: indianred;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+</style>
+</head>
+
+
+<body>
+ <div class="head">
+   <div>一键印章</div>
+   <div>返回探索</div>
+ 
+ </div>
+ <div class="main"></div>    
+ <div class="text1">这件元龙泉窑舟形砚滴通长16.2厘米、高9.1厘米、宽6.5厘米，呈舟形。</br>
+舱蓬、艄蓬、栏板一应俱全，舱内塑有男女二尊人像，</br>
+舱外有一身蓑衣的艄公攀爬蓬顶作取笠状。整体造型奇特、动静相合，做工考究。</br>
+砚滴又称水注，是一种文房用品，用于为砚台磨墨添水。</div>
+ <div class="text2">元龙泉窑舟形砚滴是元代瓷器中的精品，代表了当时的陶瓷工艺水平和艺术价值。</br>
+它是一件难得的实用与艺术完美结合的龙泉青瓷精品，凝聚了元代时期的人文价值和艺术水准。</div>    
+
+ <div class="image1">
+        <img src="https://s2.loli.net/2024/01/08/eF4K5ElDnJ8sAZd.jpg" alt="无法加载">
+ </div>
+ <div class="image2">
+        <img src="https://s2.loli.net/2024/01/08/bdsLmp2e1yZkarc.jpg" alt="无法加载">
+ </div>
+ <div class="image3">
+        <img src="https://s2.loli.net/2024/01/08/WTNlDwc3Y5SQGM2.jpg" alt="无法加载">
+ </div>
+
+ <div class="overlay">
+        <img src="" alt="放大图片">
+ </div>
+
+
+ <div class="float-button" onclick="changeBackgroundImage(0)">壹</div>
+ <div class="float-button" onclick="window.location.href = ' https://gaoyv8888.github.io/6.1/'">贰</div>
+ <div class="float-button" onclick="changeBackgroundImage(2)">叁</div>
+ <div class="float-button" onclick="changeBackgroundImage(3)">肆</div>
+ <div class="float-button" onclick="changeBackgroundImage(4)">伍</div>
+ <div class="float-button" onclick="changeBackgroundImage(5)">陆</div>
+ <div class="float-button" onclick="changeBackgroundImage(6)">柒</div>
+ <div class="float-button" onclick="changeBackgroundImage(7)">捌</div>
+ <div class="float-button" onclick="changeBackgroundImage(8)">玖</div>
+ <div class="float-button" onclick="changeBackgroundImage(9)">拾</div>
+ <script>
+     $(document).ready(function() {
+         const smallImages = $('.image1, .image2, .image3');
+         const overlay = $('.overlay');
+         const overlayImage = overlay.find('img');
+ 
+         smallImages.on('click', function() {
+             overlayImage.attr('src', $(this).find('img').attr('src'));
+             overlay.css('display', 'flex');
+         });
+ 
+         overlay.on('click', function() {
+             overlay.css('display', 'none');
+         });
+ 
+         $('.head div').on('mouseover', function() {
+             $(this).css('color', 'indianred');
+         });
+         $('.head div').on('mouseout', function() {
+             $(this).css('color', '');
+         });
+ 
+         const images = [
+             'https://s2.loli.net/2023/11/08/b4dlopxM3nuvUY5.jpg',
+             'https://s2.loli.net/2023/12/20/TlCua6f1R7b3EDX.jpg',
+             'https://s2.loli.net/2023/12/20/myE8xCdWcbh3Pzr.jpg',
+             'https://s2.loli.net/2023/12/20/Ygkh5zIed3RG4lb.jpg',
+             'https://s2.loli.net/2023/12/20/vRao1IAzw72dhnk.jpg',
+             'https://s2.loli.net/2023/12/20/rPnSm3itsbWx7Fg.jpg',
+             'https://s2.loli.net/2023/12/20/s9Gy8YPTkwDxbqA.jpg',
+             'https://s2.loli.net/2023/12/20/XARlGryaSN2mh6s.jpg',
+             'https://s2.loli.net/2023/12/20/IpxZoThnlNKWLYS.jpg',
+             'https://s2.loli.net/2023/12/20/MqsSbVZfcRJtQuy.jpg'
+         ];
+         let currentIndex = 0;
+         
+         function changeBackgroundImage(index) {
+             currentIndex = index;
+             $('.main').css('backgroundImage', `url(${images[currentIndex]})`);
+         }
+ 
+         $('.main').on('click', function() {
+             currentIndex++;
+             if (currentIndex >= images.length) {
+                 currentIndex = 0;
+             }
+             $('.main').css('backgroundImage', `url(${images[currentIndex]})`);
+         });
+     });
+ </script>
+</body>
+</html>
